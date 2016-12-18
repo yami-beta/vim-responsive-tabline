@@ -12,6 +12,15 @@ Use plugin manager
 Plug 'yami-beta/vim-responsive-tabline'
 ```
 
+## Option
+
+If you want manually to enable vim-responsive-tabline, use `g:responsive_tabline_enable` option.
+
+```vim
+let g:responsive_tabline_enable = 0
+set tabline=%!responsive_tabline#get_tabline()
+```
+
 # LICENSE
 
 MIT

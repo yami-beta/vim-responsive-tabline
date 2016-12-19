@@ -21,6 +21,11 @@ let g:responsive_tabline_enable = 0
 set tabline=%!responsive_tabline#get_tabline()
 ```
 
+## Known Bugs
+
+- `E541` is shown in tabline if 20 and over tabpages are created. 
+  - Detail: `:h E541`
+
 # LICENSE
 
 MIT

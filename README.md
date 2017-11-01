@@ -21,7 +21,8 @@ let g:responsive_tabline_enable = 0
 set tabline=%!responsive_tabline#get_tabline()
 ```
 
-If you want to customize tabline's label, use `g:Responsive_tabline_custom_label_func` option.
+If you want to customize tabline's label, use `g:Responsive_tabline_custom_label_func` option.  
+Note: If you use `g:Responsive_tabline_custom_label_func`, tabpage label is disabled.
 
 ```vim
 function! s:show_buffers_to_tabline()

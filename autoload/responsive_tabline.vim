@@ -26,7 +26,7 @@ function! s:resize_label(tabpagenr, tabpage_label, tab_width)
   let label = ' ' . filename . ' '
 
   " Disable tabpage label if `g:Responsive_tabline_custom_label_func` is `Funcref`
-  if type(g:Responsive_tabline_custom_label_func) ==# type(function('tr'))
+  if exists('g:Responsive_tabline_custom_label_func') && type(g:Responsive_tabline_custom_label_func) ==# type(function('tr'))
     return hi . label . '%#TabLineFill#'
   endif
   return '%' . a:tabpagenr . 'T' . hi . label . '%T%#TabLineFill#'
